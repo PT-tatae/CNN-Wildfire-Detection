@@ -1,4 +1,22 @@
 # main.py
+import tensorflow as tf
+
+# ตรวจสอบ GPU
+gpus = tf.config.list_physical_devices('GPU')
+if gpus:
+    try:
+        # ตั้งค่าให้ใช้ GPU แบบอัตโนมัติ
+        for gpu in gpus:
+            tf.config.experimental.set_memory_growth(gpu, True)
+        print(f"GPUs available: {gpus}")
+    except RuntimeError as e:
+        print(e)
+else:
+    print("No GPU found.")
+
+
+
+
 from data_preprocessing import load_data
 from model_training import create_model, train_model
 
