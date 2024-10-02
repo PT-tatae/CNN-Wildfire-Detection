@@ -38,4 +38,4 @@ test_loss, test_acc = model.evaluate(test_generator)
 print(f"Test Accuracy: {test_acc * 100:.2f}%")
 
 # บันทึกโมเดล
-model.save('wildfire_detection_model.h5')
+model.save('wildfire_detection_model.keras')

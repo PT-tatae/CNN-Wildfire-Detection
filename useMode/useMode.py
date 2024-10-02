@@ -1,7 +1,7 @@
 from tensorflow.keras.models import load_model
 
 # โหลดโมเดล
-model = load_model('wildfire_detection_model.h5')
+model = load_model('wildfire_detection_model.keras')
 
 import numpy as np
 from tensorflow.keras.preprocessing import image
