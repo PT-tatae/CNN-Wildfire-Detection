@@ -12,6 +12,7 @@ def create_model():
     model.add(layers.MaxPooling2D((2, 2)))
     model.add(layers.Flatten())
     model.add(layers.Dense(512, activation='relu'))
+    model.add(layers.Dropout(0.5))  # ใช้ Dropout เพื่อป้องกัน overfitting
     model.add(layers.Dense(1, activation='sigmoid'))  # สำหรับ binary classification
 
     # คอมไพล์โมเดล

@@ -39,3 +39,9 @@ print(f"Test Accuracy: {test_acc * 100:.2f}%")
 
 # บันทึกโมเดล
 model.save('wildfire_detection_model.keras')
+
+from graph import plot_metrics
+
+# สร้างกราฟเปรียบเทียบ
+plot_metrics(history)
+
