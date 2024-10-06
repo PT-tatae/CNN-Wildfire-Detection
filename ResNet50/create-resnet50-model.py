@@ -61,7 +61,7 @@ def create_model():
         layers.Dropout(0.2),
         layers.Dense(256, activation='relu'),  # เพิ่ม Fully Connected Layer
         layers.Dropout(0.2), 
-        layers.Dense(1, activation='sigmoid')
+        layers.Dense(1, activation='sigmoid') 
         ])
 
     model.compile(

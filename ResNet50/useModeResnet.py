@@ -36,7 +36,7 @@ def predict_images(img_folder):
         # แสดงผลภาพและผลลัพธ์
         plt.subplot(5, 4, i + 1)
         plt.imshow(img)
-        plt.title(f"{label} (Fire: {fire_confidence:.2f}, No Fire: {nofire_confidence:.2f})")
+        plt.title(f"{label}")
         plt.axis('off')
 
     plt.tight_layout()

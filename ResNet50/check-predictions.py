@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing import image
 import os
 
 # โหลดโมเดลที่ฝึกเสร็จแล้ว
-model = tf.keras.models.load_model('wildfire_detection_model_resnet50.keras')
+model = tf.keras.models.load_model('wildfire_detection_model_finetuned.keras')
 
 # ฟังก์ชันทำนายผลจากภาพ
 def predict_images(model, image_dir, num_images):
